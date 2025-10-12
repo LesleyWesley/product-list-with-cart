@@ -2,14 +2,22 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import UnselectedProductCard from "./components/UnselectedProductCard"
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <h1>Hello World!</h1>
-    </>
+    <main>
+      <section className="product-section">
+        <h1>Desserts</h1>
+        <UnselectedProductCard />
+      </section>
+      <section className="cart-section">
+        <p>This is where the cart will go!</p>
+      </section>
+
+    </main>
   )
 }
 
