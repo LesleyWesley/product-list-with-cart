@@ -11,7 +11,10 @@ function App() {
     <main>
       <section className="product-section">
         <h1>Desserts</h1>
-        <UnselectedProductCard />
+        <div className="product-container">
+          <UnselectedProductCard />
+          <UnselectedProductCard />
+        </div>
       </section>
       <section className="cart-section">
         <p>This is where the cart will go!</p>
