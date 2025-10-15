@@ -118,6 +118,41 @@ h1 {
   font-weight: 600;
 }
 
+/*Selected Card - Mobile*/
+.selected {
+  border: 2px solid var(--selected-item-clr);
+}
+
+.add-delete-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--selected-item-clr);
+  border-radius: 1.25rem;
+  position: absolute;
+  bottom: -10%;
+}
+
+.add-delete-section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  color: #FFF;
+  padding: .6rem 0;
+}
+
+.add-delete-section-container > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid #FFF;
+  background-color: var(--selected-item-clr);
+}
+
 /*Media Queries */
 
 @media (min-width: 1000px) {

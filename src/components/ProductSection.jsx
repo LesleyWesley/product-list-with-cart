@@ -1,4 +1,5 @@
 import UnselectedProductCard from "./UnselectedProductCard"
+import SelectedProductCard from "./SelectedProductCard"
 
 export default function ProductSection() {
   return (
@@ -6,7 +7,7 @@ export default function ProductSection() {
       <h1>Desserts</h1>
 
       <div className="product-section-container">
-        <UnselectedProductCard />
+        <SelectedProductCard />
         <UnselectedProductCard />
         <UnselectedProductCard />
         <UnselectedProductCard />
