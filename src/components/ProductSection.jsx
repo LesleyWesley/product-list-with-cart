@@ -1,5 +1,18 @@
+import UnselectedProductCard from "./UnselectedProductCard"
+
 export default function ProductSection() {
   return (
-    <h1>This is the product section!</h1>
+    <section className="product-section">
+      <h1>Desserts</h1>
+
+      <div className="product-section-container">
+        <UnselectedProductCard />
+        <UnselectedProductCard />
+        <UnselectedProductCard />
+        <UnselectedProductCard />
+        <UnselectedProductCard />
+        <UnselectedProductCard />
+      </div>
+    </section>
   )
 }

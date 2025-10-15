@@ -22,7 +22,6 @@ body {
   align-items: center;
   flex-direction: column;
   margin: 0;
-  padding: 1rem 0;
   width: 100%;
 }
 
@@ -39,4 +38,91 @@ main {
   align-items: center;
   flex-direction: column;
   width: 90%;
+}
+
+.product-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+/*Unselected Card - Mobile*/
+
+.product-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 325px;
+}
+
+.img-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.thumbnail {
+  border-radius: .5rem;
+}
+
+.add-to-cart-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  width: 50%;
+  padding: .5rem 0;
+  border: 1px solid var(--dark-text-clr);
+  border-radius: 1.25rem;
+  background-color: #FFF;
+  font-weight: 600;
+  position: absolute;
+  font-size: .9rem;
+  bottom: -10%;
+}
+
+.add-to-cart-button > img {
+  width: 15%;
+}
+
+.text-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.category {
+  font-size: .9rem;
+  color: var(--medium-text-clr);
+}
+
+.product-name {
+  font-weight: 600;
+  margin: .5rem 0;
+}
+
+.price {
+  color: var(--selected-item-clr);
+  font-weight: 600;
+}
+
+/*Media Queries */
+
+@media (min-width: 1000px) {
+
+  .product-card {
+    max-width: calc((100% - 4rem) / 3);
+  }
 }
