@@ -164,7 +164,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem 0;
+  padding: 2rem 0 1.5rem 0;
 }
 
 .cart-container {
@@ -180,6 +180,7 @@ h2 {
   width: 100%;
   color: var(--selected-item-clr);
   margin: 0;
+  font-size: 1.6rem;
 }
 
 .empty-cart {
