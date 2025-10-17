@@ -1,8 +1,12 @@
+import CartItem from "./CartItem"
+
 export default function FullCart() {
   return (
     <div className="full-cart">
-      <ul>
-        //Cart items will go here
+      <ul className="cart-item-list">
+        <CartItem />
+        <CartItem />
+        <CartItem />
       </ul>
 
       <div className="total-section">
