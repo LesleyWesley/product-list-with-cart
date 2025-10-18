@@ -39,6 +39,7 @@ main {
   align-items: center;
   flex-direction: column;
   width: 90%;
+  margin-top: 2rem;
 }
 
 .product-section-container {
@@ -52,6 +53,7 @@ main {
 
 h1 {
   font-size: 2.5rem;
+  margin-top: 0;
 }
 
 /*Unselected Card - Mobile*/
@@ -83,6 +85,7 @@ h1 {
   align-items: center;
   gap: .5rem;
   width: 50%;
+  min-width: 8rem;
   padding: .5rem 0;
   border: 1px solid var(--dark-text-clr);
   border-radius: 1.25rem;
@@ -90,7 +93,8 @@ h1 {
   font-weight: 600;
   position: absolute;
   font-size: .9rem;
-  bottom: -10%;
+  bottom: -7%;
+  height: 2.25rem;
 }
 
 .add-to-cart-button > img {
@@ -127,13 +131,15 @@ h1 {
 
 .add-delete-section {
   width: 50%;
+  min-width: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--selected-item-clr);
   border-radius: 1.25rem;
   position: absolute;
-  bottom: -10%;
+  bottom: -7%;
+  height: 2.25rem;
 }
 
 .add-delete-section-container {
@@ -307,6 +313,16 @@ h3 {
 /*Media Queries */
 
 @media (min-width: 1000px) {
+
+  main {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .cart {
+    min-width: 250px;
+  }
 
   .product-card {
     max-width: calc((100% - 4rem) / 3);
