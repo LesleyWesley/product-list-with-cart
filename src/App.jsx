@@ -7,6 +7,7 @@ import CartSection from "./components/CartSection"
 
 function App() {
 
+
   return (
     <main>
       <ProductSection />

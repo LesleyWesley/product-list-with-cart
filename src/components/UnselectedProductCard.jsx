@@ -1,4 +1,4 @@
-export default function UnselectedProductCard() {
+export default function UnselectedProductCard(props) {
   return (
     <article className="product-card">
       <div className="img-section">
@@ -9,9 +9,9 @@ export default function UnselectedProductCard() {
         </button>
       </div>
       <div className="text-section">
-        <span className="category">Waffle</span>
-        <p className="product-name">Waffle with Berries</p>
-        <span className="price">$6.50</span>
+        <span className="category">{props.category}</span>
+        <p className="product-name">{props.name}</p>
+        <span className="price">${props.price.toFixed(2)}</span>
       </div>
     </article>
   )
