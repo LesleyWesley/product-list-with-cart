@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -7,11 +7,12 @@ import CartSection from "./components/CartSection"
 
 function App() {
 
+  const [cart, setCart] = React.useState(["yes"]);
 
   return (
     <main>
-      <ProductSection />
-      <CartSection />
+      <ProductSection cart = {cart} setCart={setCart}/>
+      <CartSection cart={cart}/>
     </main>
   )
 }
