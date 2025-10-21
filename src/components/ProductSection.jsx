@@ -4,10 +4,7 @@ import SelectedProductCard from "./SelectedProductCard"
 import data from "/src/data.json"
 
 export default function ProductSection(props) {
-
-  function handleClick(e) {
-    props.setCart(prevCart => [...prevCart,  {name: name, price: 6.50}])
-  }
+  console.log(props.cart)
 
   const productElements = data.map(product => (
     <UnselectedProductCard
@@ -18,7 +15,6 @@ export default function ProductSection(props) {
       img = {product.image.thumbnail}
       cart={props.cart}
       setCart = {props.setCart}
-      handleClick = {handleClick}
     />
   ))
 
