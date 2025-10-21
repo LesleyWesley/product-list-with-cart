@@ -7,7 +7,7 @@ export default function ProductSection(props) {
   console.log(props.cart)
 
   const productElements = data.map(product => (
-    <UnselectedProductCard
+    <SelectedProductCard
       key = {product.name}
       name = {product.name}
       category = {product.category}
