@@ -1,5 +1,8 @@
+import React from "react"
+
 export default function SelectedProductCard(props) {
   const productObject = {name: `${props.name}`, price: `${props.price}`}
+
 
   function addItem() {
     props.setCart(prevCart => [...prevCart,  productObject])
