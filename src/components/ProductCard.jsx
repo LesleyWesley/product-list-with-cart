@@ -4,7 +4,7 @@ import UnselectedProductCard from "./UnselectedProductCard"
 
 export default function ProductCard(props) {
 
-  const [count, setCount] = React.useState(0);
+  const [count, setCount] = React.useState(props.cart.filter(product => product.name === props.name).length);
   console.log(count)
 
   if (count > 0) {

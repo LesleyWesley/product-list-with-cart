@@ -7,7 +7,7 @@ import CartSection from "./components/CartSection"
 
 function App() {
 
-  const [cart, setCart] = React.useState(["yes"]);
+  const [cart, setCart] = React.useState([]);
 
   return (
     <main>
