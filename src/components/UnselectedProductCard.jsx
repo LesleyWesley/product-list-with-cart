@@ -6,7 +6,6 @@ export default function UnselectedProductCard(props) {
 
   function handleClick() {
     props.setCart(prevCart => [...prevCart,  productObject])
-    props.setCount(props.cart.filter(product => product.name === props.name).length)
   }
 
   return (
