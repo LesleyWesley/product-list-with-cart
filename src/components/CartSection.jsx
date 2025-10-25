@@ -7,7 +7,7 @@ export default function CartSection(props) {
     <div className="cart">
       <div className="cart-container">
         <h2>Your Cart ({props.cart.length})</h2>
-           <FullCart />
+        {props.cart.length > 0 ? <FullCart /> : <EmptyCart />}
 
 
       </div>
