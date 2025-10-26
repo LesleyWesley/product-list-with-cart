@@ -17,7 +17,7 @@ export default function SelectedProductCard(props) {
               <button type="button" aria-label="Delete one from cart">
                   <img src="./src/assets/icon-decrement-quantity.svg" alt="delete icon" />
               </button>
-              <span className="product-quantity">{props.count}</span>
+              <span className="product-quantity">4</span>
               <button type="button" aria-label="Add one to cart" onClick={addItem}>
                   <img src="./src/assets/icon-increment-quantity.svg" alt="add icon" />
               </button>
