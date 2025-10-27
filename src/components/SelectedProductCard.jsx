@@ -5,7 +5,13 @@ export default function SelectedProductCard(props) {
 
 
   function addItem() {
-    props.setCart(prevCart => [...prevCart,  productObject])
+    if (props.itemCount === 0) {
+      props.setCart(prevCart => [...prevCart,  productObject])
+      props.setItemCount(prevCount => prevCount + 1)
+    } else {
+      props.setItemCount(prevCount => prevCount + 1)
+      console.log(props.itemCount)
+    }
   }
 
   return (
@@ -17,7 +23,7 @@ export default function SelectedProductCard(props) {
               <button type="button" aria-label="Delete one from cart">
                   <img src="./src/assets/icon-decrement-quantity.svg" alt="delete icon" />
               </button>
-              <span className="product-quantity">4</span>
+              <span className="product-quantity">{props.itemCount}</span>
               <button type="button" aria-label="Add one to cart" onClick={addItem}>
                   <img src="./src/assets/icon-increment-quantity.svg" alt="add icon" />
               </button>
