@@ -7,7 +7,26 @@ import './App.css'
 function App() {
 
   return (
-    <h1>Hello World!</h1>
+    <main>
+
+    {/*This is the left side of the page*/}
+
+      <div className="product-section">
+        <h1>Desserts</h1>
+
+        <div className="product-cards-container">
+          This is where the product cards will go
+        </div>
+
+      </div>
+
+      {/*This is the right side of the page (aka the cart side) */}
+      
+      <div className="cart-section">
+        This is where the cart will go
+      </div>
+
+    </main>
   )
 }
 
