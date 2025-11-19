@@ -14,7 +14,7 @@ img {
 
 
 body {
-  background-color: var(--body-bg-clr);
+  /*background-color: var(--body-bg-clr);*/
   color: var(--dark-text-clr);
   font-family: "Red Hat Text", sans-serif;
   display: flex;

@@ -21,9 +21,15 @@ function App() {
       </div>
 
       {/*This is the right side of the page (aka the cart side) */}
-      
+
       <div className="cart-section">
-        This is where the cart will go
+        <div className="cart">
+          <h2>Your Cart (0)</h2>
+          <div className="cart-content">
+            <img src="./src/assets/illustration-empty-cart.svg" alt="" />
+            <p className="empty-cart-message">Your added items will appear here</p>
+          </div>
+        </div>
       </div>
 
     </main>
